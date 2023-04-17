@@ -17,7 +17,7 @@ objp = np.zeros((CHECKERBOARD_SIZE[0] * CHECKERBOARD_SIZE[1], 3), np.float32)
 objp[:, :2] = np.mgrid[0:CHECKERBOARD_SIZE[0], 0:CHECKERBOARD_SIZE[1]].T.reshape(-1, 2)
 
 # Load images
-images = glob.glob('img1.png')  # Replace with the path to your images
+images = glob.glob('img1.png')
 
 for fname in images:
     img = cv2.imread(fname)
